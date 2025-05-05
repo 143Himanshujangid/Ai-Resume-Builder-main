@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="400" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="400" fill="white"/>
+  
+  <!-- Left sidebar -->
+  <rect x="0" y="0" width="100" height="400" fill="#EBF4FF"/>
+  
+  <!-- Name -->
+  <rect x="20" y="30" width="60" height="10" rx="2" fill="#2B6CB0"/>
+  
+  <!-- Contact info -->
+  <rect x="20" y="50" width="60" height="5" rx="2" fill="#4A5568"/>
+  <rect x="20" y="60" width="60" height="5" rx="2" fill="#4A5568"/>
+  
+  <!-- Skills section in sidebar -->
+  <rect x="20" y="90" width="40" height="8" rx="2" fill="#2B6CB0"/>
+  <rect x="20" y="105" width="60" height="4" rx="2" fill="#4A5568"/>
+  <rect x="20" y="115" width="60" height="3" rx="1" fill="#E2E8F0"/>
+  <rect x="20" y="115" width="40" height="3" rx="1" fill="#2B6CB0"/>
+  
+  <rect x="20" y="125" width="60" height="4" rx="2" fill="#4A5568"/>
+  <rect x="20" y="135" width="60" height="3" rx="1" fill="#E2E8F0"/>
+  <rect x="20" y="135" width="45" height="3" rx="1" fill="#2B6CB0"/>
+  
+  <rect x="20" y="145" width="60" height="4" rx="2" fill="#4A5568"/>
+  <rect x="20" y="155" width="60" height="3" rx="1" fill="#E2E8F0"/>
+  <rect x="20" y="155" width="30" height="3" rx="1" fill="#2B6CB0"/>
+  
+  <!-- Main content area -->
+  <!-- Summary section -->
+  <rect x="120" y="30" width="60" height="8" rx="2" fill="#2B6CB0"/>
+  <rect x="120" y="45" width="160" height="30" rx="2" fill="#F7FAFC"/>
+  
+  <!-- Experience section -->
+  <rect x="120" y="90" width="80" height="8" rx="2" fill="#2B6CB0"/>
+  
+  <rect x="120" y="105" width="160" height="50" rx="2" fill="#F7FAFC"/>
+  <rect x="125" y="110" width="60" height="6" rx="2" fill="#2D3748"/>
+  <rect x="125" y="120" width="100" height="4" rx="2" fill="#718096"/>
+  <rect x="125" y="130" width="150" height="20" rx="2" fill="#F7FAFC"/>
+  
+  <rect x="120" y="165" width="160" height="50" rx="2" fill="#F7FAFC"/>
+  <rect x="125" y="170" width="60" height="6" rx="2" fill="#2D3748"/>
+  <rect x="125" y="180" width="100" height="4" rx="2" fill="#718096"/>
+  <rect x="125" y="190" width="150" height="20" rx="2" fill="#F7FAFC"/>
+  
+  <!-- Education section -->
+  <rect x="120" y="230" width="80" height="8" rx="2" fill="#2B6CB0"/>
+  
+  <rect x="120" y="245" width="160" height="40" rx="2" fill="#F7FAFC"/>
+  <rect x="125" y="250" width="100" height="6" rx="2" fill="#2D3748"/>
+  <rect x="125" y="260" width="80" height="4" rx="2" fill="#718096"/>
+  <rect x="125" y="270" width="60" height="4" rx="2" fill="#A0AEC0"/>
+  
+  <!-- Projects section -->
+  <rect x="120" y="300" width="80" height="8" rx="2" fill="#2B6CB0"/>
+  
+  <rect x="120" y="315" width="160" height="70" rx="2" fill="#F7FAFC"/>
+  <rect x="125" y="320" width="70" height="6" rx="2" fill="#2D3748"/>
+  <rect x="125" y="330" width="150" height="4" rx="2" fill="#718096"/>
+  <rect x="125" y="340" width="150" height="40" rx="2" fill="#F7FAFC"/>
+</svg>
