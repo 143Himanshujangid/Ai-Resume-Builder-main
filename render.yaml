@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: ai-resume-builder-backend
+    env: node
+    buildCommand: cd Backend && npm install
+    startCommand: cd Backend && npm start
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://your-mongodb-atlas-uri
+      - key: JWT_SECRET_KEY
+        value: your-secret-key
+      - key: JWT_SECRET_EXPIRES_IN
+        value: "1d"
+      - key: NODE_ENV
+        value: production
+      - key: ALLOWED_SITE
+        value: https://143himanshujangid.github.io
+  
+  - type: static
+    name: ai-resume-builder-frontend
+    env: static
+    buildCommand: cd Frontend && npm install && npm run build
+    staticPublishPath: Frontend/dist
+    envVars:
+      - key: VITE_APP_URL
+        value: https://ai-resume-builder-backend.onrender.com/
