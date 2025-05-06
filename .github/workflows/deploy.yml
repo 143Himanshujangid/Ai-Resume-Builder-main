@@ -5,6 +5,9 @@ on:
     branches: [ master ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -27,8 +30,13 @@ jobs:
         env:
           VITE_APP_URL: https://ai-resume-builder-backend.onrender.com/
 
+      - name: Copy root index.html to dist
+        run: |
+          cp index.html Frontend/dist/
+          cp -r Frontend/dist/* dist/ || mkdir -p dist && cp -r Frontend/dist/* dist/
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: Frontend/dist
+          folder: dist
           branch: gh-pages
