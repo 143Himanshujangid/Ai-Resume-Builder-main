@@ -29,11 +29,12 @@ jobs:
           npm run build
         env:
           VITE_APP_URL: https://ai-resume-builder-backend.onrender.com/
+          VITE_GEMENI_API_KEY: ${{ secrets.VITE_GEMENI_API_KEY }}
 
-      - name: Copy root index.html to dist
+      - name: Prepare dist directory
         run: |
-          cp index.html Frontend/dist/
-          cp -r Frontend/dist/* dist/ || mkdir -p dist && cp -r Frontend/dist/* dist/
+          mkdir -p dist
+          cp -r Frontend/dist/* dist/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

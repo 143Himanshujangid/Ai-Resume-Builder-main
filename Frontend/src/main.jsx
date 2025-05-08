@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter, createHashRouter } from "react-router-dom";
 import HomePage from "./pages/home/HomePage.jsx";
 import Dashboard from "./pages/dashboard/Dashboard.jsx";
 import { EditResume } from "./pages/dashboard/edit-resume/[resume_id]/EditResume.jsx";
@@ -12,7 +12,8 @@ import AuthPage from "./pages/auth/customAuth/AuthPage.jsx";
 import { resumeStore } from "./store/store";
 import { Provider } from "react-redux";
 
-const router = createBrowserRouter([
+// Using HashRouter for GitHub Pages compatibility
+const router = createHashRouter([
   {
     element: <App />,
     children: [

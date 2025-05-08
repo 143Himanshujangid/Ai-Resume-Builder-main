@@ -1,0 +1,33 @@
+{
+  "name": "ai-resume-builder",
+  "version": "1.0.0",
+  "description": "AI Resume Builder with Frontend and Backend",
+  "scripts": {
+    "start:frontend": "cd Frontend && npm run dev",
+    "start:backend": "cd Backend && npm run dev",
+    "build:frontend": "cd Frontend && npm run build:prod",
+    "copy:dist": "if exist dist rmdir /s /q dist && mkdir dist && xcopy Frontend\\dist\\* dist\\ /E /H /C /I /Y",
+    "build": "npm run build:frontend && npm run copy:dist",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/143Himanshujangid/Ai-Resume-Builder-main.git"
+  },
+  "keywords": [
+    "resume",
+    "ai",
+    "react",
+    "node"
+  ],
+  "author": "Himanshu Jangid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/143Himanshujangid/Ai-Resume-Builder-main/issues"
+  },
+  "homepage": "https://github.com/143Himanshujangid/Ai-Resume-Builder-main#readme",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
