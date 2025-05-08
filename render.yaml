@@ -6,15 +6,15 @@ services:
     startCommand: cd Backend && npm start
     envVars:
       - key: MONGODB_URI
-        value: mongodb+srv://your-mongodb-atlas-uri
+        value: your_mongodb_uri
       - key: JWT_SECRET_KEY
-        value: your-secret-key
+        value: your_secret_key
       - key: JWT_SECRET_EXPIRES_IN
-        value: "1d"
+        value: 1d
       - key: NODE_ENV
         value: production
       - key: ALLOWED_SITE
-        value: https://143himanshujangid.github.io
+        value: https://your-frontend-url
   
   - type: static
     name: ai-resume-builder-frontend
@@ -23,4 +23,4 @@ services:
     staticPublishPath: Frontend/dist
     envVars:
       - key: VITE_APP_URL
-        value: https://ai-resume-builder-backend.onrender.com/
+        value: https://your-backend-url.onrender.com
